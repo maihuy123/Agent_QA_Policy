@@ -1,0 +1,766 @@
+{
+  "metrics": {
+    "chunk_size": 800,
+    "chunk_overlap": 160,
+    "top_k": 5,
+    "num_chunks": 34,
+    "retrieval": 1.0,
+    "answer": 0.971,
+    "citation": 1.0
+  },
+  "model": "gpt-4.1-mini",
+  "results": [
+    {
+      "id": "q01",
+      "type": "factual",
+      "question": "Nhân viên chính thức được bao nhiêu ngày phép năm?",
+      "expected_answer": "12 ngày phép năm có lương; cứ 5 năm làm việc liên tục được cộng thêm 1 ngày.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Nhân viên chính thức được hưởng 12 ngày phép năm có lương. Cứ mỗi 5 năm làm việc liên tục, nhân viên được cộng thêm 1 ngày phép. Ngày phép được tính theo năm dương lịch, từ 01/01 đến 31/12. Nếu nhân viên vào làm giữa năm thì ngày phép được tính theo tỷ lệ số tháng làm việc thực tế, mỗi tháng tương ứng 1 ngày phép [Nguồn: chinh_sach_nghi_phep.md, mục Số ngày phép năm].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "huong_dan_onboarding.docx"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác theo đáp án chuẩn, đồng thời cung cấp thêm thông tin chi tiết về cách tính ngày phép cho nhân viên vào làm giữa năm, không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q02",
+      "type": "factual",
+      "question": "Phép năm chưa dùng hết có được chuyển sang năm sau không?",
+      "expected_answer": "Được chuyển tối đa 5 ngày, phải dùng trước 31/03 năm sau, quá hạn bị hủy và không quy đổi thành tiền.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Phép năm chưa dùng hết được chuyển sang năm sau tối đa 5 ngày. Phép chuyển sang phải được sử dụng trước ngày 31/03 của năm sau, nếu quá hạn sẽ bị hủy và không được quy đổi thành tiền [Nguồn: chinh_sach_nghi_phep.md, mục Chuyển phép sang năm sau].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ các ý chính: chuyển tối đa 5 ngày, phải dùng trước 31/03 năm sau, quá hạn bị hủy và không được quy đổi thành tiền, không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q03",
+      "type": "factual",
+      "question": "Muốn nghỉ phép 4 ngày thì phải gửi đơn trước bao lâu?",
+      "expected_answer": "Nghỉ từ 3 ngày trở lên phải gửi đơn trước ít nhất 7 ngày làm việc.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Nếu muốn nghỉ phép 4 ngày, bạn phải gửi đơn nghỉ phép trước ít nhất 7 ngày làm việc. Cụ thể:\n- Nhân viên tạo đơn nghỉ phép trên hệ thống HRM nội bộ, ghi rõ ngày nghỉ và lý do.\n- Nghỉ từ 3 ngày trở lên: gửi đơn trước ít nhất 7 ngày làm việc.\n- Quản lý trực tiếp duyệt đơn trong vòng 2 ngày làm việc.\n- Nếu nghỉ từ 5 ngày liên tục trở lên cần thêm sự phê duyệt của Trưởng phòng [Nguồn: chinh_sach_nghi_phep.md, mục Thủ tục xin nghỉ phép].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đã nêu rõ nghỉ từ 3 ngày trở lên phải gửi đơn trước ít nhất 7 ngày làm việc, đúng với đáp án chuẩn. Thông tin thêm về quy trình và phê duyệt không mâu thuẫn và không ảnh hưởng đến độ chính xác.",
+      "citation_ok": true
+    },
+    {
+      "id": "q04",
+      "type": "factual",
+      "question": "Nghỉ ốm 3 ngày thì cần nộp giấy tờ gì?",
+      "expected_answer": "Nghỉ ốm từ 2 ngày liên tục trở lên phải nộp giấy xác nhận của cơ sở y tế cho Phòng Nhân sự trong vòng 5 ngày làm việc sau khi đi làm lại.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Khi nghỉ ốm 3 ngày, bạn cần:\n\n- Báo cho quản lý trực tiếp trước 9 giờ sáng của ngày nghỉ.\n- Nộp giấy xác nhận của cơ sở y tế cho Phòng Nhân sự trong vòng 5 ngày làm việc sau khi đi làm lại.\n- Chế độ ốm đau được hưởng theo quy định của Bảo hiểm xã hội.\n\nThông tin này được nêu rõ trong mục \"Nghỉ ốm\" của chính sách nghỉ phép [Nguồn: chinh_sach_nghi_phep.md, mục Nghỉ ốm].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đã nêu rõ cần nộp giấy xác nhận của cơ sở y tế cho Phòng Nhân sự trong vòng 5 ngày làm việc sau khi đi làm lại, đúng với đáp án chuẩn. Thông tin thêm về báo cho quản lý và chế độ ốm đau không sai và không gây mâu thuẫn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q05",
+      "type": "factual",
+      "question": "Khi kết hôn tôi được nghỉ mấy ngày có lương?",
+      "expected_answer": "Bản thân kết hôn được nghỉ 3 ngày có lương.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Khi kết hôn, bạn được nghỉ 3 ngày có lương theo chính sách nghỉ việc riêng của công ty [Nguồn: chinh_sach_nghi_phep.md, mục Nghỉ việc riêng có lương].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý nêu rõ được nghỉ 3 ngày có lương khi kết hôn, phù hợp với đáp án chuẩn và không mâu thuẫn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q06",
+      "type": "factual",
+      "question": "Lao động nam được nghỉ bao nhiêu ngày khi vợ sinh con?",
+      "expected_answer": "5 ngày làm việc; công ty hỗ trợ thêm 2.000.000 đồng mỗi lần sinh con.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Lao động nam được nghỉ 5 ngày làm việc khi vợ sinh con. Ngoài ra, công ty còn hỗ trợ thêm 2.000.000 đồng cho mỗi lần sinh con [Nguồn: chinh_sach_nghi_phep.md, mục Nghỉ thai sản].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "huong_dan_onboarding.docx"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác theo đáp án chuẩn, bao gồm số ngày nghỉ và mức hỗ trợ tài chính.",
+      "citation_ok": true
+    },
+    {
+      "id": "q07",
+      "type": "factual",
+      "question": "Mỗi năm được nghỉ không lương tối đa bao nhiêu ngày?",
+      "expected_answer": "Tối đa 30 ngày mỗi năm, cần Trưởng phòng và Phòng Nhân sự phê duyệt.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Mỗi năm nhân viên được nghỉ không lương tối đa 30 ngày. Đơn nghỉ không lương phải được Trưởng phòng và Phòng Nhân sự phê duyệt [Nguồn: chinh_sach_nghi_phep.md, mục Nghỉ không lương].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác, bao gồm số ngày nghỉ không lương tối đa là 30 ngày mỗi năm và yêu cầu phê duyệt của Trưởng phòng và Phòng Nhân sự, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q08",
+      "type": "factual",
+      "question": "Đi công tác Đà Nẵng thì phụ cấp lưu trú mỗi ngày là bao nhiêu?",
+      "expected_answer": "Các tỉnh thành ngoài Hà Nội và TP. Hồ Chí Minh: 300.000 đồng/ngày.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Phụ cấp lưu trú khi đi công tác tại Đà Nẵng (thuộc các tỉnh thành khác Hà Nội và TP. Hồ Chí Minh) là 300.000 đồng/ngày, trả theo ngày và không cần hóa đơn [Nguồn: quy_dinh_cong_tac_phi.md, mục Phụ cấp lưu trú].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ thông tin chính xác về mức phụ cấp lưu trú cho Đà Nẵng là 300.000 đồng/ngày, phù hợp với đáp án chuẩn và không có thông tin sai lệch.",
+      "citation_ok": true
+    },
+    {
+      "id": "q09",
+      "type": "factual",
+      "question": "Tiền khách sạn khi công tác ở TP. Hồ Chí Minh được thanh toán tối đa bao nhiêu một đêm?",
+      "expected_answer": "Tối đa 1.200.000 đồng/đêm theo hóa đơn.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Tiền khách sạn khi công tác ở TP. Hồ Chí Minh được thanh toán tối đa 1.200.000 đồng một đêm theo hóa đơn. Nếu vượt mức này, nhân viên phải tự chi trả, trừ trường hợp được Giám đốc khối phê duyệt bằng văn bản [Nguồn: quy_dinh_cong_tac_phi.md, mục Tiền thuê phòng nghỉ].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ thông tin chính xác về mức thanh toán tối đa 1.200.000 đồng/đêm theo hóa đơn, không mâu thuẫn với đáp án chuẩn và bổ sung thêm thông tin hợp lý về trường hợp vượt mức.",
+      "citation_ok": true
+    },
+    {
+      "id": "q10",
+      "type": "factual",
+      "question": "Khi nào nhân viên được đi máy bay khi công tác?",
+      "expected_answer": "Chặng từ 300 km trở lên được đi máy bay hạng phổ thông.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Nhân viên được đi máy bay khi công tác nếu chặng đi công tác từ 300 km trở lên và sẽ được đi máy bay hạng phổ thông. Với chặng dưới 300 km thì sử dụng ô tô của công ty hoặc tàu hỏa, xe khách [Nguồn: quy_dinh_cong_tac_phi.md, mục Phương tiện đi lại].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ ý chính và số liệu của đáp án chuẩn, đồng thời không mâu thuẫn và có bổ sung thông tin thêm không sai.",
+      "citation_ok": true
+    },
+    {
+      "id": "q11",
+      "type": "factual",
+      "question": "Được tạm ứng bao nhiêu phần trăm chi phí công tác?",
+      "expected_answer": "Tối đa 70% chi phí dự kiến, gửi đề nghị trước ngày đi ít nhất 3 ngày làm việc.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Nhân viên được tạm ứng tối đa 70% chi phí dự kiến của chuyến công tác. Đề nghị tạm ứng gửi Phòng Tài chính - Kế toán trước ngày đi ít nhất 3 ngày làm việc [Nguồn: quy_dinh_cong_tac_phi.md, mục Tạm ứng].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ các ý chính: tạm ứng tối đa 70% chi phí dự kiến và gửi đề nghị trước ngày đi ít nhất 3 ngày làm việc, không có thông tin sai lệch.",
+      "citation_ok": true
+    },
+    {
+      "id": "q12",
+      "type": "factual",
+      "question": "Hạn nộp hồ sơ quyết toán công tác phí là khi nào?",
+      "expected_answer": "Trong vòng 7 ngày làm việc sau khi kết thúc chuyến công tác; nộp muộn hơn 30 ngày sẽ không được thanh toán.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Hạn nộp hồ sơ quyết toán công tác phí là trong vòng 7 ngày làm việc sau khi kết thúc chuyến công tác. Hồ sơ nộp muộn hơn 30 ngày sẽ không được thanh toán. Hồ sơ gồm tờ trình đã duyệt, hóa đơn tài chính hợp lệ, vé và thẻ lên máy bay (nếu có) [Nguồn: quy_dinh_cong_tac_phi.md, mục Quyết toán].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đã đầy đủ các ý chính về hạn nộp hồ sơ quyết toán công tác phí theo đáp án chuẩn và không có thông tin sai lệch. Thông tin thêm về hồ sơ không ảnh hưởng đến độ chính xác của câu trả lời.",
+      "citation_ok": true
+    },
+    {
+      "id": "q13",
+      "type": "factual",
+      "question": "Công tác nước ngoài cần đăng ký trước bao lâu?",
+      "expected_answer": "Trước ít nhất 14 ngày, cần thêm phê duyệt của Giám đốc khối.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Chuyến công tác nước ngoài cần đăng ký trước ít nhất 14 ngày và phải được phê duyệt của Giám đốc khối, ngoài việc được quản lý trực tiếp phê duyệt trên hệ thống trước khi đi [Nguồn: quy_dinh_cong_tac_phi.md, mục Phê duyệt chuyến công tác].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ các ý chính: đăng ký trước ít nhất 14 ngày và cần phê duyệt của Giám đốc khối, không mâu thuẫn với đáp án chuẩn, thông tin thêm về phê duyệt quản lý trực tiếp trên hệ thống không sai.",
+      "citation_ok": true
+    },
+    {
+      "id": "q14",
+      "type": "factual",
+      "question": "Chi phí taxi khi đi công tác được thanh toán tối đa bao nhiêu?",
+      "expected_answer": "Theo hóa đơn thực tế, tối đa 500.000 đồng mỗi ngày.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Chi phí taxi hoặc xe công nghệ trong thời gian công tác được thanh toán theo hóa đơn thực tế, tối đa 500.000 đồng mỗi ngày [Nguồn: quy_dinh_cong_tac_phi.md, mục Phương tiện đi lại].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ các ý chính và số liệu của đáp án chuẩn, không mâu thuẫn và thông tin thêm không sai.",
+      "citation_ok": true
+    },
+    {
+      "id": "q15",
+      "type": "factual",
+      "question": "Một tuần được làm việc từ xa tối đa mấy ngày?",
+      "expected_answer": "Tối đa 2 ngày mỗi tuần; thứ Hai bắt buộc làm tại văn phòng.",
+      "expected_source": "quy_trinh_lam_viec_tu_xa.md",
+      "answer": "Mỗi tuần, nhân viên được làm việc từ xa tối đa 2 ngày. Trong đó, thứ Hai là ngày làm việc tại văn phòng bắt buộc để họp giao ban. Nếu không dùng hết ngày làm việc từ xa trong tuần thì không được cộng dồn sang tuần sau [Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Số ngày làm việc từ xa].",
+      "retrieved_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác, bao gồm tối đa 2 ngày làm việc từ xa mỗi tuần và thứ Hai bắt buộc làm việc tại văn phòng, không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q16",
+      "type": "factual",
+      "question": "Nhân viên thử việc có được làm việc từ xa không?",
+      "expected_answer": "Không. Chỉ nhân viên chính thức làm việc từ 3 tháng trở lên được đăng ký.",
+      "expected_source": "quy_trinh_lam_viec_tu_xa.md",
+      "answer": "Nhân viên thử việc không được làm việc từ xa. Chỉ nhân viên chính thức đã làm việc tại công ty từ 3 tháng trở lên mới được đăng ký làm việc từ xa (WFH) [Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Đối tượng áp dụng].",
+      "retrieved_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác, bao gồm cả việc nhân viên thử việc không được làm việc từ xa và chỉ nhân viên chính thức làm việc từ 3 tháng trở lên mới được đăng ký.",
+      "citation_ok": true
+    },
+    {
+      "id": "q17",
+      "type": "factual",
+      "question": "Hạn đăng ký ngày làm việc từ xa là khi nào?",
+      "expected_answer": "Trước 17 giờ thứ Sáu của tuần trước đó trên hệ thống HRM.",
+      "expected_source": "quy_trinh_lam_viec_tu_xa.md",
+      "answer": "Hạn đăng ký ngày làm việc từ xa như sau:\n- Nhân viên đăng ký ngày làm việc từ xa trên hệ thống HRM trước 17 giờ thứ Sáu của tuần trước đó.\n- Quản lý trực tiếp duyệt trước 12 giờ trưa thứ Hai.\n- Trường hợp đột xuất, nhân viên phải nhắn quản lý trực tiếp và được đồng ý trước 8 giờ 30 sáng ngày hôm đó.\n\n[Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Cách đăng ký]",
+      "retrieved_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ thông tin chính xác về hạn đăng ký ngày làm việc từ xa là trước 17 giờ thứ Sáu của tuần trước đó trên hệ thống HRM, đồng thời cung cấp thêm thông tin về quy trình duyệt và trường hợp đột xuất không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q18",
+      "type": "factual",
+      "question": "Công ty hỗ trợ tiền internet khi làm việc từ xa như thế nào?",
+      "expected_answer": "300.000 đồng mỗi tháng cho nhân viên đăng ký WFH ít nhất 4 ngày trong tháng, trả cùng kỳ lương.",
+      "expected_source": "quy_trinh_lam_viec_tu_xa.md",
+      "answer": "Công ty hỗ trợ 300.000 đồng mỗi tháng tiền internet cho nhân viên có đăng ký làm việc từ xa ít nhất 4 ngày trong tháng. Khoản hỗ trợ này được trả cùng kỳ lương [Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Hỗ trợ chi phí].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác các thông tin về mức hỗ trợ, điều kiện đăng ký WFH và thời điểm trả tiền, không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q19",
+      "type": "factual",
+      "question": "Khi làm việc từ xa phải phản hồi tin nhắn trong bao lâu?",
+      "expected_answer": "Trong vòng 30 phút, trong khung giờ làm việc chính 9 giờ đến 17 giờ.",
+      "expected_source": "quy_trinh_lam_viec_tu_xa.md",
+      "answer": "Khi làm việc từ xa, nhân viên phải phản hồi tin nhắn công việc trong vòng 30 phút [Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Yêu cầu khi làm việc từ xa].",
+      "retrieved_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": false,
+      "judge_reason": "Câu trả lời thiếu thông tin về khung giờ làm việc chính từ 9 giờ đến 17 giờ.",
+      "citation_ok": true
+    },
+    {
+      "id": "q20",
+      "type": "factual",
+      "question": "Mật khẩu phải dài tối thiểu bao nhiêu ký tự?",
+      "expected_answer": "Ít nhất 12 ký tự gồm chữ hoa, chữ thường, chữ số và ký tự đặc biệt.",
+      "expected_source": "chinh_sach_bao_mat_thong_tin.md",
+      "answer": "Mật khẩu phải có ít nhất 12 ký tự, bao gồm chữ hoa, chữ thường, chữ số và ký tự đặc biệt [Nguồn: chinh_sach_bao_mat_thong_tin.md, mục Mật khẩu].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác, bao gồm yêu cầu tối thiểu 12 ký tự và các loại ký tự cần có, không mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q21",
+      "type": "factual",
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "expected_answer": "90 ngày một lần, không dùng lại 5 mật khẩu gần nhất.",
+      "expected_source": "chinh_sach_bao_mat_thong_tin.md",
+      "answer": "Mật khẩu phải được đổi 90 ngày một lần và không được dùng lại 5 mật khẩu gần nhất. Ngoài ra, mật khẩu cần có ít nhất 12 ký tự, gồm chữ hoa, chữ thường, chữ số và ký tự đặc biệt [Nguồn: chinh_sach_bao_mat_thong_tin.md, mục Mật khẩu].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đã nêu đầy đủ thời gian đổi mật khẩu (90 ngày một lần) và quy định không dùng lại 5 mật khẩu gần nhất, phù hợp với đáp án chuẩn. Thông tin thêm về yêu cầu mật khẩu không sai và không gây mâu thuẫn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q22",
+      "type": "factual",
+      "question": "Nếu bị mất laptop thì phải báo cáo trong bao lâu và báo cho ai?",
+      "expected_answer": "Báo bộ phận An ninh thông tin trong vòng 1 giờ qua đường dây nóng 1900-0000 hoặc security@saomai.example.",
+      "expected_source": "chinh_sach_bao_mat_thong_tin.md",
+      "answer": "Khi bị mất laptop do công ty cấp, bạn phải báo ngay cho bộ phận IT qua email it-support@saomai.example [Nguồn: quy_trinh_lam_viec_tu_xa.md, mục Thiết bị].\n\nNgoài ra, theo chính sách bảo mật thông tin, mọi sự cố bảo mật như mất thiết bị phải báo cho bộ phận An ninh thông tin trong vòng 1 giờ kể từ khi phát hiện, qua đường dây nóng 1900-0000 hoặc email security@saomai.example [Nguồn: chinh_sach_bao_mat_thong_tin.md, mục Báo cáo sự cố].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_bao_mat_thong_tin.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời có đầy đủ thông tin về việc báo mất laptop cho bộ phận An ninh thông tin trong vòng 1 giờ qua đường dây nóng hoặc email, phù hợp với đáp án chuẩn. Thông tin thêm về báo cho bộ phận IT không mâu thuẫn và không bị trừ điểm.",
+      "citation_ok": true
+    },
+    {
+      "id": "q23",
+      "type": "factual",
+      "question": "Thông tin công ty được phân thành mấy mức?",
+      "expected_answer": "4 mức: Công khai, Nội bộ, Mật và Tối mật.",
+      "expected_source": "chinh_sach_bao_mat_thong_tin.md",
+      "answer": "Thông tin công ty được chia thành 4 mức: \n- Công khai\n- Nội bộ\n- Mật\n- Tối mật\n\nTài liệu mức Mật và Tối mật phải được dán nhãn ở đầu trang và chỉ chia sẻ cho người có nhu cầu công việc [Nguồn: chinh_sach_bao_mat_thong_tin.md, mục Phân loại thông tin].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md",
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý nêu rõ 4 mức thông tin đúng như đáp án chuẩn và không có thông tin sai lệch. Phần bổ sung về nhãn mác và chia sẻ không làm sai lệch nội dung chính.",
+      "citation_ok": true
+    },
+    {
+      "id": "q24",
+      "type": "factual",
+      "question": "Nghi ngờ email lừa đảo thì phải làm gì?",
+      "expected_answer": "Không mở tệp/đường dẫn, bấm nút Báo cáo lừa đảo trong Outlook hoặc chuyển tiếp tới security@saomai.example.",
+      "expected_source": "chinh_sach_bao_mat_thong_tin.md",
+      "answer": "Khi nghi ngờ email lừa đảo (phishing), bạn cần:\n- Không mở tệp đính kèm hoặc đường dẫn trong email đó.\n- Bấm nút \"Báo cáo lừa đảo\" trong Outlook hoặc chuyển tiếp email tới địa chỉ security@saomai.example để báo cáo.\nĐây là quy trình để bảo vệ thông tin và an toàn cho hệ thống công ty [Nguồn: chinh_sach_bao_mat_thong_tin.md, mục Email và lừa đảo].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "chinh_sach_bao_mat_thong_tin.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ các ý chính của đáp án chuẩn: không mở tệp/đường dẫn, bấm nút Báo cáo lừa đảo trong Outlook hoặc chuyển tiếp tới địa chỉ email báo cáo.",
+      "citation_ok": true
+    },
+    {
+      "id": "q25",
+      "type": "factual",
+      "question": "Ngày đầu đi làm nhân viên mới cần có mặt lúc mấy giờ và mang gì?",
+      "expected_answer": "8 giờ 30 tại quầy lễ tân tầng 3, mang CCCD bản gốc.",
+      "expected_source": "huong_dan_onboarding.docx",
+      "answer": "Ngày đầu đi làm, nhân viên mới cần có mặt tại quầy lễ tân tầng 3 lúc 8 giờ 30 sáng và mang theo CCCD bản gốc. Trong ngày này, Phòng Nhân sự sẽ hướng dẫn ký hợp đồng, chụp ảnh làm thẻ nhân viên và giới thiệu với nhóm làm việc. Buổi chiều, bộ phận IT sẽ bàn giao laptop, tài khoản email và hướng dẫn cài đặt VPN [Nguồn: huong_dan_onboarding.docx, mục Ngày làm việc đầu tiên].",
+      "retrieved_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "cited_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đã nêu rõ nhân viên mới cần có mặt lúc 8 giờ 30 tại quầy lễ tân tầng 3 và mang theo CCCD bản gốc, đúng với đáp án chuẩn. Thông tin thêm về các hoạt động trong ngày không sai và không làm mâu thuẫn với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q26",
+      "type": "factual",
+      "question": "Lương thử việc bằng bao nhiêu phần trăm lương chính thức?",
+      "expected_answer": "85% lương chính thức.",
+      "expected_source": "huong_dan_onboarding.docx",
+      "answer": "Lương thử việc bằng 85% lương chính thức. Thời gian thử việc là 2 tháng đối với vị trí chuyên viên và 1 tháng đối với vị trí nhân viên hỗ trợ. Cuối kỳ thử việc, quản lý trực tiếp đánh giá và Phòng Nhân sự thông báo kết quả [Nguồn: huong_dan_onboarding.docx, mục Thời gian thử việc].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "huong_dan_onboarding.docx",
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý nêu rõ lương thử việc bằng 85% lương chính thức, đúng với đáp án chuẩn. Thông tin thêm về thời gian thử việc và quy trình đánh giá không sai và không làm giảm tính chính xác của câu trả lời.",
+      "citation_ok": true
+    },
+    {
+      "id": "q27",
+      "type": "factual",
+      "question": "Thời gian thử việc của vị trí chuyên viên là bao lâu?",
+      "expected_answer": "2 tháng (nhân viên hỗ trợ là 1 tháng).",
+      "expected_source": "huong_dan_onboarding.docx",
+      "answer": "Thời gian thử việc của vị trí chuyên viên là 2 tháng. Lương thử việc bằng 85% lương chính thức. Cuối kỳ thử việc, quản lý trực tiếp sẽ đánh giá và Phòng Nhân sự thông báo kết quả [Nguồn: huong_dan_onboarding.docx, mục Thời gian thử việc].",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "huong_dan_onboarding.docx",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời nêu rõ thời gian thử việc của vị trí chuyên viên là 2 tháng, đúng với đáp án chuẩn. Thông tin thêm về lương thử việc và đánh giá không sai và không làm thay đổi nội dung chính.",
+      "citation_ok": true
+    },
+    {
+      "id": "q28",
+      "type": "factual",
+      "question": "Nhân viên mới phải hoàn thành những khóa đào tạo bắt buộc nào?",
+      "expected_answer": "Ba khóa trên LMS trong tháng đầu: Văn hóa công ty, Nhận thức bảo mật thông tin, An toàn lao động.",
+      "expected_source": "huong_dan_onboarding.docx",
+      "answer": "Nhân viên mới phải hoàn thành ba khóa đào tạo bắt buộc trong tháng đầu tiên trên hệ thống LMS, gồm:\n- Văn hóa công ty\n- Nhận thức bảo mật thông tin\n- An toàn lao động\n\n[Thông tin này được trích từ tài liệu \"Hướng dẫn onboarding cho nhân viên mới\", mục Đào tạo bắt buộc] [Nguồn: huong_dan_onboarding.docx, mục Đào tạo bắt buộc]",
+      "retrieved_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "cited_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác theo đáp án chuẩn, liệt kê đúng ba khóa đào tạo bắt buộc trong tháng đầu trên LMS.",
+      "citation_ok": true
+    },
+    {
+      "id": "q29",
+      "type": "factual",
+      "question": "Số máy lẻ của bộ phận IT là bao nhiêu?",
+      "expected_answer": "Máy lẻ 200 (email it-support@saomai.example).",
+      "expected_source": "huong_dan_onboarding.docx",
+      "answer": "Số máy lẻ của bộ phận IT là 200 [Nguồn: huong_dan_onboarding.docx, mục Đầu mối liên hệ].",
+      "retrieved_sources": [
+        "chinh_sach_bao_mat_thong_tin.md",
+        "huong_dan_onboarding.docx",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [
+        "huong_dan_onboarding.docx"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": true,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý cung cấp đúng số máy lẻ 200, phù hợp với đáp án chuẩn và không có thông tin sai lệch.",
+      "citation_ok": true
+    },
+    {
+      "id": "q30",
+      "type": "metadata",
+      "question": "Chính sách nghỉ phép do đơn vị nào soạn và cập nhật lần cuối khi nào?",
+      "expected_answer": "Phòng Nhân sự, cập nhật ngày 2026-03-01.",
+      "expected_source": "chinh_sach_nghi_phep.md",
+      "answer": "Chính sách nghỉ phép do Phòng Nhân sự soạn và được cập nhật lần cuối vào ngày 01/03/2026 [Nguồn: chinh_sach_nghi_phep.md].",
+      "retrieved_sources": [],
+      "cited_sources": [
+        "chinh_sach_nghi_phep.md"
+      ],
+      "tools_used": [
+        "list_sources"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý đầy đủ và chính xác về đơn vị soạn thảo và ngày cập nhật, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q31",
+      "type": "metadata",
+      "question": "Quy định công tác phí được cập nhật lần gần nhất vào ngày nào?",
+      "expected_answer": "Ngày 2026-01-15, do Phòng Tài chính - Kế toán soạn.",
+      "expected_source": "quy_dinh_cong_tac_phi.md",
+      "answer": "Quy định công tác phí được cập nhật lần gần nhất vào ngày 15 tháng 01 năm 2026 [Nguồn: quy_dinh_cong_tac_phi.md, mục Quy định công tác phí].",
+      "retrieved_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Câu trả lời của trợ lý chứa đầy đủ thông tin về ngày cập nhật lần gần nhất (15/01/2026) trùng khớp với đáp án chuẩn. Thông tin về nguồn không ảnh hưởng đến kết quả chấm.",
+      "citation_ok": true
+    },
+    {
+      "id": "q32",
+      "type": "out_of_scope",
+      "question": "Công ty có hỗ trợ học phí thạc sĩ cho nhân viên không?",
+      "expected_answer": "Không có thông tin trong tài liệu.",
+      "expected_source": null,
+      "answer": "Tôi không tìm thấy thông tin về việc công ty hỗ trợ học phí thạc sĩ cho nhân viên trong tài liệu nội bộ hiện có. Bạn có thể liên hệ phòng nhân sự để được hỗ trợ thêm.",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Trợ lý đã nói rõ không tìm thấy thông tin trong tài liệu và không bịa thêm nội dung, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q33",
+      "type": "out_of_scope",
+      "question": "Lương tháng 13 được trả vào thời điểm nào?",
+      "expected_answer": "Không có thông tin trong tài liệu.",
+      "expected_source": null,
+      "answer": "Tôi không tìm thấy thông tin về thời điểm trả lương tháng 13 trong tài liệu nội bộ hiện có. Bạn có thể liên hệ phòng Nhân sự để được hỗ trợ chi tiết hơn.",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md"
+      ],
+      "cited_sources": [],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Trợ lý đã nói rõ không tìm thấy thông tin về thời điểm trả lương tháng 13 trong tài liệu và không bịa đặt câu trả lời, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q34",
+      "type": "out_of_scope",
+      "question": "Văn phòng công ty có chỗ gửi xe ô tô không?",
+      "expected_answer": "Không có thông tin trong tài liệu.",
+      "expected_source": null,
+      "answer": "Tôi không tìm thấy thông tin về chỗ gửi xe ô tô tại văn phòng công ty trong tài liệu nội bộ hiện có. Bạn có thể liên hệ bộ phận hành chính hoặc quản lý văn phòng để được hỗ trợ cụ thể hơn.",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Trợ lý đã nói rõ không tìm thấy thông tin trong tài liệu và không bịa nội dung, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    },
+    {
+      "id": "q35",
+      "type": "out_of_scope",
+      "question": "Quy trình xin tăng lương diễn ra như thế nào?",
+      "expected_answer": "Không có thông tin trong tài liệu.",
+      "expected_source": null,
+      "answer": "Tôi không tìm thấy thông tin về quy trình xin tăng lương trong tài liệu nội bộ hiện có. Bạn có thể liên hệ phòng Nhân sự để được hướng dẫn chi tiết hơn.",
+      "retrieved_sources": [
+        "chinh_sach_nghi_phep.md",
+        "quy_dinh_cong_tac_phi.md",
+        "quy_trinh_lam_viec_tu_xa.md"
+      ],
+      "cited_sources": [],
+      "tools_used": [
+        "search_documents"
+      ],
+      "retrieval_ok": null,
+      "answer_ok": true,
+      "judge_reason": "Trợ lý đã nói rõ không tìm thấy thông tin trong tài liệu và không bịa nội dung, phù hợp với đáp án chuẩn.",
+      "citation_ok": true
+    }
+  ]
+}
